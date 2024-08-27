@@ -3,17 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
 </head>
 <body>
     <header>
-        <h1>Joshua</h1>
-        <a href="https:www.google.com">Google</a>
-        <a href="https:www.google.com">Google</a>
-        <a href="https:www.google.com">Google</a>
-        <a href="https:www.google.com">Google</a>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure veniam saepe perspiciatis, aperiam placeat sapiente aut unde voluptatem laboriosam magnam harum officia, voluptates in dolorem praesentium natus totam, nostrum facere?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure veniam saepe perspiciatis, aperiam placeat sapiente aut unde voluptatem laboriosam magnam harum officia, voluptates in dolorem praesentium natus totam, nostrum facere?</p>
+        <div class="container">
+            <h1>Joshua Sandoval</h1>
+            <h2>Software Engineer</h2>
+        </div>
     </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#about-me"><i class="fas fa-user"></i> About Me</a></li>
+            <li><a href="#skills"><i class="fas fa-laptop-code"></i> My Skills</a></li>
+            <li><a href="#hobbies"><i class="fas fa-music"></i> My Hobbies</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Me</a></li>
+        </ul>
+    </nav>
+        
+    <main class="container">
+
+        <section id="about-me" class="section">
+            <h2>About Me</h2>
+            <p>I thrive in environments that demand hard work and dedication, 
+                where I can fully immerse myself in challenging projects. 
+                My passion for taking on new challenges is fueled by the desire to apply 
+                the knowledge and skills I have accumulated throughout my career. 
+                I believe that every challenge represents an opportunity to grow, 
+                not only as a professional, but also as a person.
+                
+                In my professional journey, I’ve had the privilege of working on diverse projects 
+                that have tested my abilities and pushed me out of my comfort zone. 
+                Each experience has been a stepping stone, preparing me for the next big challenge. 
+                I am enthusiastic about the future and look forward to the new opportunities that 
+                will allow me to further develop my skills and make a positive impact in whatever I do.
+                <div class="image-container">
+                    <div class="image-item" onclick="this.classList.toggle('show-info')">
+                        <img src="Images/narnia-globos-1.webp" alt="Origen">
+                        <div class="info">
+                            <h3>Homegrown</h3>
+                            <p>I was born in Culiacan Sinaloa, where all my family comes from. My culture and customs have been affected by the people I have met throughout my life but especially by my family. This has helped me to become the person I am today and I feel very proud of my roots.</p>
+                        </div>
+                    </div>
+                    <div class="image-item" onclick="this.classList.toggle('show-info')">
+                        <img src="Images/estatutoUABC-SER-sinBordes.png" alt="Educación">
+                        <div class="info">
+                            <h3>Education</h3>
+                            <p>Ingeniería en Software y Tecnologías Emergentes Universidad Autónoma de Baja California Anticipated, August 2026</p>
+                            <p>Pathway Connect, 2023 Brigham Young University</p>
+                        </div>
+                    </div>
+                </div>
+            </p>
+
+        </section>
+    
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <div class="image-container2">
+                <div class="image-item2" onclick="this.classList.toggle('show-info')">
+                    <img src="Images\java.png" alt="java">
+                    <div class="info">
+                        <h3>Java</h3>
+                    </div>
+                </div>
+                <div class="image-item2" onclick="this.classList.toggle('show-info')">
+                    <img src="Images\main-qimg-8d772733af7e5a19e961f34eff79d6d7.webp" alt="c++">
+                    <div class="info">
+                        <h3>C++</h3>
+                    </div>
+                </div>
+                <div class="image-item2" onclick="this.classList.toggle('show-info')">
+                    <img src="Images\image-141.webp" alt="c">
+                    <div class="info">
+                        <h3>C</h3>
+                    </div>
+                </div>
+                <div class="image-item2" onclick="this.classList.toggle('show-info')">
+                    <img src="Images\Python.svg.png" alt="Python">
+                    <div class="info">
+                        <h3>Python</h3>
+                    </div>
+                </div>
+                <div class="image-item2" onclick="this.classList.toggle('show-info')">
+                    <img src="Images\html-5-icon-1791x2048-z31wj8s7.png" alt="html">
+                    <div class="info">
+                        <h3>Html</h3>
+                    </div>
+                </div>
+                <div class="image-item2" onclick="this.classList.toggle('show-info')">
+                    <img src="Images\CSS3.png" alt="css">
+                    <div class="info">
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="hobbies" class="section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>I love going to the gym</li>
+                <li>Playing soccer</li>
+                <li>My favorite series is Brooklyn 99</li>
+                <li>My favorite movie is Batman trilogy</li>
+                <li>I love to eat hamburgers</li>
+                <li>I love spending time with my girlfriend</li>
+                <li>My favorite band is Arctic Monkeys</li>
+            </ul>
+        </section>
+    
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>You can reach me through my social media:</p>
+            <div class="social-icons">
+                <a href="https://x.com/joshua_bar64442" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/joshuaaaaaypaola/?locale=es_LA" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/joshua_sandovalb11/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Erick Joshua Sandoval Barraza. All rights reserved.</p>
+    </footer>
 </body>
 </html>
